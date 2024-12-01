@@ -41,18 +41,24 @@
       document.addEventListener("DOMContentLoaded", () => {
         const codeContainer = document.getElementById("code-container");
 
-        // Get the code from localStorage
-        const code =
-          localStorage.getItem("codeToDisplay") || "No code provided";
+        // Get the code from the URL parameter
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get("code");
 
-        // Split the code into lines and create a div for each line
-        const lines = code.split("\n");
-        lines.forEach((line, index) => {
-          const lineDiv = document.createElement("div");
-          lineDiv.className = "view-line";
-          lineDiv.textContent = line;
-          codeContainer.appendChild(lineDiv);
-        });
+        if (code) {
+          // Decode the code from URL and split it into lines
+          const decodedCode = decodeURIComponent(code);
+          const lines = decodedCode.split("\n");
+
+          lines.forEach((line, index) => {
+            const lineDiv = document.createElement("div");
+            lineDiv.className = "view-line";
+            lineDiv.textContent = line;
+            codeContainer.appendChild(lineDiv);
+          });
+        } else {
+          codeContainer.textContent = "No code provided.";
+        }
       });
     </script>
   </body>
