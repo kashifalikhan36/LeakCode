@@ -17,7 +17,12 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 2. Navigate to `chrome://extensions/` in your Chrome browser.
 3. Enable **Developer mode** (toggle switch at the top right).
 4. Click **Load unpacked** and select the folder where you cloned the repository.
-5. The extension should now be installed and active.
+5. Enable certain Chrome flags to ensure the AI functionality works:
+   - Go to `chrome://flags/`
+   - Enable **Gemini Nano**
+   - Enable **Device Optimization**
+6. Wait a few hours for the AI functionality to activate.
+7. The extension should now be installed and active.
 
 ## How to Use
 1. Go to LeetCode and start solving a coding problem.
@@ -35,8 +40,6 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 ## Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request. Ensure that your code follows the existing style and conventions used in the project.
 
-## Acknowledgements
-This extension leverages web technologies and Chrome's extension capabilities to streamline the coding process and improve productivity.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
-For questions or suggestions, feel free to reach out or submit an issue on GitHub.
