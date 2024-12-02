@@ -11,7 +11,7 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 
 
 ## Demo Video
-Check out the demo of GestureGuru in action!
+Check out the demo of LeakCode in action!
 [![LeakCode Demo](https://img.youtube.com/vi/awrEsBxS3KpxCzVe/0.jpg)](https://www.youtube.com/watch?v=awrEsBxS3KpxCzVe)
 
 ## Installation
