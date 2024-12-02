@@ -1,4 +1,4 @@
-# LeakCode -- Your Sidekick for DSA Stuff
+# LeakCode - Your Sidekick for DSA Stuff
 
 ## Overview
 This Chrome extension is designed to enhance your coding experience on LeetCode by providing timely assistance when working on coding problems. When a user spends more than 30 minutes on a problem, the extension opens a new window displaying the code they've written, a detailed explanation of the solution, and an accompanying video tutorial. This ensures that users can quickly grasp the underlying logic and concepts without spending excessive time on a single problem. The extension maintains the user's original logic and variable names, ensuring that their approach remains intact.
