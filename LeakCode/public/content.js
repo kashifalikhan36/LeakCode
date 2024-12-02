@@ -38,7 +38,7 @@ setTimeout(async () => {
 
       const session_3 = await ai.languageModel.create({
         systemPrompt:
-          "You have to Pretend like a Youtube Video Searecher. I will give you the code and You will write a query to serach on youtbe to get right video of it . Example:- user:- 'fun two_sum' and response :- 'two sum question leetcode' ",
+          "You have to Pretend like a Youtube Video Searecher. I will give you the code and You will write a query to serach in 4-8 words only for youtube to get right video of it . Example:- 'two sum question leetcode' ",
       });
 
       const response_3 = await session_3.prompt(element.textContent);
