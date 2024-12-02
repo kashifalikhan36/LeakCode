@@ -10,10 +10,10 @@
   "background": {
     "service_worker": "background.js"
   },
-  "host_permissions": ["https://leetcode.com/*"],
+  "host_permissions": ["https://leetcode.com/problems/*"],
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/*"],
+      "matches": ["https://leetcode.com/problems/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
