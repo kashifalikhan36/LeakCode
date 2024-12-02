@@ -9,8 +9,10 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 - **Video Tutorial**: Includes a video tutorial for a more comprehensive understanding of the problem-solving approach.
 - **Logic Preservation**: Maintains the original logic and variable names in the code, ensuring no alteration of the user's thought process.
 
-## Tutorial Video
-- **Wait for Tutorial Video
+
+## Demo Video
+Check out the demo of GestureGuru in action!
+[![LeakCode Demo](https://img.youtube.com/vi/awrEsBxS3KpxCzVe/0.jpg)](https://www.youtube.com/watch?v=awrEsBxS3KpxCzVe)
 
 ## Installation
 1. Clone this repository to your local machine:
