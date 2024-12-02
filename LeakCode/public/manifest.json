@@ -1,21 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "My React Vite Extension",
-    "version": "1.0",
-    "description": "A Chrome extension built using React and Vite.",
-    "action": {
-      "default_popup": "index.html"
-    },
-    "permissions": ["activeTab", "scripting", "storage"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"],
-        "run_at": "document_end"
-      }
-    ]
+  "manifest_version": 3,
+  "name": "LeakCode",
+  "version": "1.0",
+  "description": "Solve questions with your logic. If you can't finish in 30 minutes, you'll get a hint to help you solve it with the same logic.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   }
-  
+}

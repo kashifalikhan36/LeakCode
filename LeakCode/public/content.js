@@ -26,29 +26,39 @@ setTimeout(async () => {
       });
 
       const response = await session.prompt(element.textContent);
-      console.log(response);
+      console.log("1 ok");
 
-      function openCodeViewerPage(code) {
+      const session_2 = await ai.languageModel.create({
+        systemPrompt:
+          "Pretend to be a LeetCode master. I will provide you with a code , and your task is to give me shortest and easiest explanation in very short and simple way and in simple and short steps of it with new lines. Do not modify or rewrite the code. Just explain how the code works and what it does.",
+      });
+
+      const response_2 = await session_2.prompt(element.textContent);
+      console.log("2 ok");
+
+      const session_3 = await ai.languageModel.create({
+        systemPrompt:
+          "You have to Pretend like a Youtube Video Searecher. I will give you the code and You will write a query to serach on youtbe to get right video of it . Example:- user:- 'fun two_sum' and response :- 'two sum question leetcode' ",
+      });
+
+      const response_3 = await session_3.prompt(element.textContent);
+      console.log("3 ok");
+
+      function openCodeViewerPage(code, explain, query) {
         // Encode the code to be URL-safe
         const encodedCode = encodeURIComponent(code);
-
+        const encodedExplain = encodeURIComponent(explain);
+        const encodedVideolink = encodeURIComponent(query);
         // Open the codeViewer.html in a new tab with the code as a URL parameter
+
         window.open(
-          `https://kashifalikhan36.github.io/LeakCode?code=${encodedCode}`,
+          `https://kashifalikhan36.github.io/LeakCode?code=${encodedCode}&explanation=${encodedExplain}&queryvideo=${encodedVideolink}`,
           "_blank"
         );
       }
 
       // Call the function to open the new page with the code
-      openCodeViewerPage(response);
-
-      const session_2 = await ai.languageModel.create({
-        systemPrompt:
-          "Pretend to be a LeetCode master. I will provide you with a code snippet, and your task is to give me a detailed explanation of it. Do not modify or rewrite the code. Just explain how the code works and what it does. Make sure the explanation is clear and thorough.",
-      });
-
-      const response_2 = await session_2.prompt(element.textContent);
-      console.log(response_2);
+      openCodeViewerPage(response, response_2, response_3);
     } catch (error) {
       console.error("Error interacting with the language model:", error);
     }
