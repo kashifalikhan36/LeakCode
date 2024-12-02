@@ -35,9 +35,6 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 ## Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request. Ensure that your code follows the existing style and conventions used in the project.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 This extension leverages web technologies and Chrome's extension capabilities to streamline the coding process and improve productivity.
 
