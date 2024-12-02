@@ -28,13 +28,13 @@ setTimeout(async () => {
       const response = await session.prompt(element.textContent);
       console.log("1 ok");
 
-      const session_2 = await ai.languageModel.create({
-        systemPrompt:
-          "Pretend to be a LeetCode master. I will provide you with a code , and your task is to give me shortest and easiest explanation in very short and simple way and in simple and short steps of it with new lines. Do not modify or rewrite the code. Just explain how the code works and what it does.",
-      });
+      // const session_2 = await ai.languageModel.create({
+      //   systemPrompt:
+      //     "Pretend to be a LeetCode master. I will provide you with a code , and your task is to give me shortest and easiest explanation in very short and simple way and in simple and short steps of it with new lines. Do not modify or rewrite the code. Just explain how the code works and what it does.",
+      // });
 
-      const response_2 = await session_2.prompt(element.textContent);
-      console.log("2 ok");
+      // const response_2 = await session_2.prompt(element.textContent);
+      // console.log("2 ok");
 
       const session_3 = await ai.languageModel.create({
         systemPrompt:
@@ -43,6 +43,7 @@ setTimeout(async () => {
 
       const response_3 = await session_3.prompt(element.textContent);
       console.log("3 ok");
+      let explain = "This Section is in Under Development";
 
       function openCodeViewerPage(code, explain, query) {
         // Encode the code to be URL-safe
@@ -58,7 +59,7 @@ setTimeout(async () => {
       }
 
       // Call the function to open the new page with the code
-      openCodeViewerPage(response, response_2, response_3);
+      openCodeViewerPage(response, explain, response_3);
     } catch (error) {
       console.error("Error interacting with the language model:", error);
     }
