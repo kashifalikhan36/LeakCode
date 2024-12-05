@@ -12,7 +12,7 @@ This Chrome extension is designed to enhance your coding experience on LeetCode 
 
 ## Demo Video
 Check out the demo of LeakCode in action!
-[![LeakCode Demo](https://img.youtube.com/vi/awrEsBxS3KpxCzVe/0.jpg)](https://www.youtube.com/watch?v=awrEsBxS3KpxCzVe)
+[![LeakCode Demo](https://img.youtube.com/vi/FNcw_918dwI/0.jpg)](https://www.youtube.com/watch?v=FNcw_918dwI)
 
 ## Installation
 1. Clone this repository to your local machine:
